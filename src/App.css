@@ -5,13 +5,14 @@
 }
 
 body{
-  background-color:aqua;
-  font-family: 'lato';
-  
+  background-color: bisque;
+  font-family: "lato";
 }
+
 .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 800px;
 }
