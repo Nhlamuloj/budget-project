@@ -14,6 +14,8 @@ function AddItem(props){
     })
     return(
      <div>
+
+         <h1 style={{paddingTop:'25px'}}>Add transaction</h1>
          <input placeholder="Enter item"
           onChange={(e)=>setItem(e.target.value)}
          />{" "}

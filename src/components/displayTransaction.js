@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/displayTransaction.css"
 function DisplayTransaction(props){
     return(
         <div>
@@ -6,12 +7,13 @@ function DisplayTransaction(props){
                 <div>
                 <div className="transaction-item">
                     <div>
-                    <h1>{item.amount}</h1>
+                    <h4 style={{paddingLeft:'12px', paddingTop:'25px'}}>{item.amount}</h4>
                     </div>
 
                     <div>
-                    <h1>{item.item}</h1>
+                    <h4 style={{paddingLeft:"290px",paddingTop:'25px'}}>{item.item}</h4>
                     </div>
+                    
                 
 
                 </div>
