@@ -3,24 +3,27 @@ import './App.css';
 
 import React,{useState} from 'react';
 
-import AddItem from './components/additem';
+import AddItem from './components/addItem';
+import  DisplayTransaction  from './components/displayTransaction';
 
 function App() {
 
   const [transaction, setTransaction] = useState ([]);
-  const addTransaction = ((amout, item, transactionType)=>{
+  const addTransaction = ((amount, item, transactionType)=>{
 
-    setTransaction ((item)=>[...item,{
-      amount:amout,
+    setTransaction ((items)=>[...items,{
+      amount:amount,
       item:item,
       transactionType:transactionType,
     }])
   })
+  console.log(transaction);
 
   return (
     <div className="container">
-
-      <AddItem add={ addTransaction} />  
+      <DisplayTransaction list={transaction} /> 
+      <AddItem add={ addTransaction} /> 
+     
 
     </div>
   );
